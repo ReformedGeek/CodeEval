@@ -1,5 +1,6 @@
 --[[
-Challenge description: https://www.codeeval.com/open_challenges/19/
+Challenge description:
+https://www.codeeval.com/open_challenges/19/
 
 Solution description:
 Because CodeEval only permits Lua 5.1.4, we can not use the bit32 library,
