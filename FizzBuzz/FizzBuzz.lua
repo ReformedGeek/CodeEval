@@ -24,9 +24,9 @@ local function one_fizzbuzz(x, y, limit)
         io.write("FB")
         if i == limit then
           return
-    		end
-    		io.write(" ")
-    	end
+        end
+        io.write(" ")
+      end
     else
       for i = 1, limit do
         if i % y == 0 then
@@ -80,7 +80,7 @@ local function simplified_fizzbuzz(x, y, limit)
       else io.write(tostring(i))
       end
     end
-    
+
     if i == limit then
       return
     end
@@ -92,7 +92,7 @@ end
 If x and y are equal, we can optimize our FizzBuzz routine by doing only one
 check for divisibility.
 --]]
-  
+
 local function equal_fizzbuzz(x, limit)
   for i=1,limit do
     if i % x == 0 then
@@ -105,7 +105,7 @@ local function equal_fizzbuzz(x, limit)
     io.write(" ")
   end
 end  
-  
+
 
 -- Generalized form of FizzBuzz
 local function generalized_fizzbuzz(x, y, limit)
@@ -134,10 +134,10 @@ local lines = {}
 local file = assert(io.open(arg[1], "r"))
 for line in file:lines() do
   local nums = {}
-    for num in line:gmatch("%d+") do
-       nums[#nums + 1] = tonumber(num)
-    end
-    lines[#lines + 1] = nums
+  for num in line:gmatch("%d+") do
+    nums[#nums + 1] = tonumber(num)
+  end
+  lines[#lines + 1] = nums
 end
 
 
